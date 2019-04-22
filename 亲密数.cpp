@@ -1,0 +1,29 @@
+#include<stdio.h>
+main()
+{
+	int a,b,i,j,m=0,n=0;
+	printf("Input m, n:");
+	scanf("%d,%d",&a,&b);
+	for(i=1;i<=a/2;i++)
+	{ 
+		if(!(a%i))
+		{
+			m=m+i;
+		}
+	}
+	for(j=1;j<=b/2;j++)
+	{
+		if(!(b%j))
+		{
+			n=n+j;
+		}
+	}
+	if(m==b&&n==a)
+	{
+		printf("Yes!");
+	}
+	else
+	{
+		printf("No!");
+	}
+}
